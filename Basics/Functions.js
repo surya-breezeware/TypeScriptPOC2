@@ -10,3 +10,13 @@ var myFunc2 = function (name, email, signedIn) {
     if (signedIn === void 0) { signedIn = false; }
 };
 myFunc2();
+var myFunc3 = function () {
+    return '';
+};
+var myFunc4 = function () {
+    console.log('This is a void Function');
+};
+var myFunc5 = function (errMsg) {
+    throw new Error(errMsg);
+};
+myFunc4();

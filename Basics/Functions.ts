@@ -12,4 +12,21 @@ const myFunc2 = (
 
 myFunc2()
 
+const myFunc3 = (): string => {
+  return ''
+}
+
+const myFunc4 = (): void => {
+  console.log('This is a void Function')
+}
+
+// never data type will never have a value and void will have undefined or null
+
+const myFunc5 = (errMsg): never => {
+  throw new Error(errMsg)
+}
+
+myFunc4()
+myFunc5('Error')
+
 export {}
